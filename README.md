@@ -72,3 +72,7 @@ pod 'QIMCommon'
 ## 问题反馈
 
 -   qchat@qunar.com（邮件）
+
+## PGP - for reference
+
+-   B010 0CFB AAE1 72C1 3C17 F9DC 9C85 5529 2701 0573
