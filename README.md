@@ -54,7 +54,6 @@ pod 'QIMCommon'
     * CoreGraphics
     * Security
 5. 链接以下第三方库
-    * ASIHTTPRequest
     * YYCache
     * YYModel
     * ProtocolBuffers
@@ -72,7 +71,3 @@ pod 'QIMCommon'
 ## 问题反馈
 
 -   qchat@qunar.com（邮件）
-
-## PGP - for reference
-
--   F661 133E A9BA 550B B6EB B752 7682 9352 3C0D D7BD

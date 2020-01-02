@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "QIMCommon"
-  s.version      = "4.0.0"
+  s.version      = "4.0.52"
   s.summary      = "Qunar chat App 9.0+ version QIMCommon"
   s.description  = <<-DESC
                    Qunar QIMPubCommon解决方案
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license      = "Copyright 2018 im.qunar.com"
   s.author        = { "Qunar IM" => "qtalk@qunar.com" }
 
-  s.source       = { :git => "https://github.com/qunarcorp/libQIMCommon-iOS.git", :tag=> s.version.to_s}
+  s.source       = { :git => "https://github.com/startalkIM/libqimcommon-ios.git", :tag=> s.version.to_s}
 
   s.ios.deployment_target   = '9.0'
   s.resource_bundles = {'QIMCommonResource' => ['QIMCommon/QIMKitCommonResource/*.{png,aac,caf,pem,wav}']}
@@ -49,8 +49,8 @@ Pod::Spec.new do |s|
   if $debug
     puts 'debug QIMCommon依赖第三方库'
     s.dependency 'QIMOpenSSL'
-#    s.default_subspecs = 'Base'
-     s.default_subspecs = 'Base', 'QIMPrivatePBCommon'
+    s.default_subspecs = 'Base'
+    s.default_subspecs = 'Base', 'QIMPrivatePBCommon'
 
   else
   
@@ -61,7 +61,6 @@ Pod::Spec.new do |s|
     s.default_subspecs = 'Base', 'QIMPrivatePBCommon'
   end
   
-#  s.dependency 'ASIHTTPRequest'
   s.dependency 'YYCache'
   s.dependency 'YYModel'
   s.dependency 'ProtocolBuffers'

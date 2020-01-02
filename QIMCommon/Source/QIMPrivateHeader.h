@@ -44,6 +44,7 @@
 #import "QIMManager+Found.h"
 #import "QIMManager+Search.h"
 #import "QIMManager+XmppImManagerEvent.h"
+#import "QIMManager+Pay.h"
 
 #import "QIMMessageModel.h"
 #import "QIMMessageManager.h"
@@ -56,7 +57,6 @@
 #import "QIMAppSetting.h"
 #import "QIMDataController.h"
 #import "QIMDESHelper.h"
-#import "QIMHttpApi.h"
 #import "QIMHttpRequestMonitor.h"
 #import "QIMJSONSerializer.h"
 #import "QIMFileManager.h"
@@ -93,7 +93,6 @@
 
 #import "QIMCommonCategories.h"
 
-#import "ASIHTTPRequest.h"
 #import "YYModel.h"
 
 #define UserDocumentsPath NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0]
