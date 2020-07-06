@@ -7,6 +7,7 @@
 
 #import "QIMFileManager.h"
 #import "QIMStringTransformTools.h"
+#import <APWebImage/SDImageCache.h>
 
 #define QIM_MAX_FILE_EXTENSION_LENGTH (NAME_MAX - CC_MD5_DIGEST_LENGTH * 2 - 1)
 #define kNewFileHashSalt    @"kNewFileHashSalt"
@@ -175,7 +176,8 @@ static QIMFileManager *_newfileManager = nil;
         [self qim_uploadImageWithImagePath:localImageKey forMessage:message];
     } else {
         //新版本使用半路径
-        NSString *localImagePath = [[QIMImageManager sharedInstance] defaultCachePathForKey:localImageKey];
+//        NSString *localImagePath = [[QIMImageManager sharedInstance] defaultCachePathForKey:localImageKey];
+        NSString *localImagePath = [[SDImageCache sharedImageCache] cachePathForKey:localImageKey];
         [self qim_uploadImageWithImagePath:localImagePath forMessage:message];
     }
 }
@@ -382,7 +384,7 @@ static QIMFileManager *_newfileManager = nil;
         if ([imageUrl qim_hasPrefixHttpHeader]) {
             messageNewBody = [NSString stringWithFormat:@"[obj type=\"image\" value=\"%@\" width=%f height=%f]", imageUrl, width, height];
         } else {
-            messageNewBody = [NSString stringWithFormat:@"[obj type=\"image\" value=\"%@/%@\" width=%f height=%f]", [[QIMKit sharedInstance] qimNav_InnerFileHttpHost], imageUrl, width, height];
+            messageNewBody = [NSString stringWithFormat:@"[obj type=\"image\" value=\"%@/%@\" width=%f height=%f]", [QIMNavConfigManager sharedInstance].innerFileHttpHost, imageUrl, width, height];
         }
         message.message = messageNewBody;
 #if __has_include("QIMNoteManager.h")
@@ -463,7 +465,7 @@ static QIMFileManager *_newfileManager = nil;
 
 - (void)qim_uploadVideo:(NSString *)videoPath videoDic:(NSDictionary *)videoExt withCallBack:(QIMKitUploadVideoNewRequestSuccessedBlock)callback {
     BOOL videoConfigUseAble = [[[QIMUserCacheManager sharedInstance] userObjectForKey:@"VideoConfigUseAble"] boolValue];
-    NSInteger videoMaxTimeLen = [[[QIMKit sharedInstance] userObjectForKey:@"videoMaxTimeLen"] integerValue];
+    NSInteger videoMaxTimeLen = [[[QIMUserCacheManager sharedInstance] userObjectForKey:@"videoMaxTimeLen"] integerValue];
     NSInteger videoDuration = [[videoExt objectForKey:@"Duration"] integerValue];
     if ((videoConfigUseAble == YES) && (videoDuration < videoMaxTimeLen)) {
         //当服务端返回的VideoConfigUseAble == true 或者 视频时长小于 服务器下发的videoMaxTimeLen时长

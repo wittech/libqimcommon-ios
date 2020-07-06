@@ -1,4 +1,20 @@
 PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - APWebImage (1.0.0.200228120529)
   - ASIHTTPRequest (1.8.2):
     - ASIHTTPRequest/ASIWebPageRequest (= 1.8.2)
     - ASIHTTPRequest/CloudFiles (= 1.8.2)
@@ -13,102 +29,116 @@ PODS:
   - ASIHTTPRequest/S3 (1.8.2):
     - ASIHTTPRequest/Core
   - AvoidCrash (2.5.2)
-  - CocoaAsyncSocket (7.6.3)
-  - CocoaLumberjack (3.5.3):
-    - CocoaLumberjack/Core (= 3.5.3)
-  - CocoaLumberjack/Core (3.5.3)
+  - CocoaAsyncSocket (7.6.4)
+  - CocoaLumberjack (3.6.1):
+    - CocoaLumberjack/Core (= 3.6.1)
+  - CocoaLumberjack/Core (3.6.1)
   - ProtocolBuffers (1.9.11)
-  - QIMCommonCategories (3.0.10211613)
-  - QIMDataBase (3.0.10211613)
-  - QIMKitVendor (3.0.10211613):
+  - QIMCommonCategories (4.0.55)
+  - "QIMDataBase (4.0.55+1)"
+  - "QIMKitVendor (4.0.53+1)":
     - CocoaLumberjack
-    - QIMCommonCategories (~> 3.0)
-    - QIMKitVendor/Audio (= 3.0.10211613)
-    - QIMKitVendor/DES (= 3.0.10211613)
-    - QIMKitVendor/DOG (= 3.0.10211613)
-    - QIMKitVendor/GCD (= 3.0.10211613)
-    - QIMKitVendor/Helper (= 3.0.10211613)
-    - QIMKitVendor/HTTP (= 3.0.10211613)
-    - QIMKitVendor/JSON (= 3.0.10211613)
-    - QIMKitVendor/PinYin (= 3.0.10211613)
-    - QIMKitVendor/PublicRedefineHeader (= 3.0.10211613)
-    - QIMKitVendor/SDWebImage (= 3.0.10211613)
-    - QIMKitVendor/UUID (= 3.0.10211613)
-    - QIMKitVendor/ZBar (= 3.0.10211613)
-    - QIMKitVendor/Zip (= 3.0.10211613)
+    - QIMCommonCategories (~> 4.0)
+    - "QIMKitVendor/Audio (= 4.0.53+1)"
+    - "QIMKitVendor/DES (= 4.0.53+1)"
+    - "QIMKitVendor/DOG (= 4.0.53+1)"
+    - "QIMKitVendor/GCD (= 4.0.53+1)"
+    - "QIMKitVendor/Helper (= 4.0.53+1)"
+    - "QIMKitVendor/HTTP (= 4.0.53+1)"
+    - "QIMKitVendor/JSON (= 4.0.53+1)"
+    - "QIMKitVendor/libwebp (= 4.0.53+1)"
+    - "QIMKitVendor/PinYin (= 4.0.53+1)"
+    - "QIMKitVendor/PublicRedefineHeader (= 4.0.53+1)"
+    - "QIMKitVendor/UUID (= 4.0.53+1)"
+    - "QIMKitVendor/ZBar (= 4.0.53+1)"
+    - "QIMKitVendor/Zip (= 4.0.53+1)"
+    - Reachability
     - ZipArchive
-  - QIMKitVendor/Audio (3.0.10211613):
+  - "QIMKitVendor/Audio (4.0.53+1)":
     - CocoaLumberjack
-    - QIMCommonCategories (~> 3.0)
+    - QIMCommonCategories (~> 4.0)
     - QIMKitVendor/PublicRedefineHeader
+    - Reachability
     - ZipArchive
-  - QIMKitVendor/DES (3.0.10211613):
+  - "QIMKitVendor/DES (4.0.53+1)":
     - CocoaLumberjack
-    - QIMCommonCategories (~> 3.0)
+    - QIMCommonCategories (~> 4.0)
     - QIMKitVendor/PublicRedefineHeader
+    - Reachability
     - ZipArchive
-  - QIMKitVendor/DOG (3.0.10211613):
+  - "QIMKitVendor/DOG (4.0.53+1)":
     - CocoaLumberjack
-    - QIMCommonCategories (~> 3.0)
+    - QIMCommonCategories (~> 4.0)
     - QIMKitVendor/PublicRedefineHeader
+    - Reachability
     - ZipArchive
-  - QIMKitVendor/GCD (3.0.10211613):
+  - "QIMKitVendor/GCD (4.0.53+1)":
     - CocoaLumberjack
-    - QIMCommonCategories (~> 3.0)
+    - QIMCommonCategories (~> 4.0)
     - QIMKitVendor/PublicRedefineHeader
+    - Reachability
     - ZipArchive
-  - QIMKitVendor/Helper (3.0.10211613):
+  - "QIMKitVendor/Helper (4.0.53+1)":
     - CocoaLumberjack
-    - QIMCommonCategories (~> 3.0)
+    - QIMCommonCategories (~> 4.0)
     - QIMKitVendor/PublicRedefineHeader
+    - Reachability
     - ZipArchive
-  - QIMKitVendor/HTTP (3.0.10211613):
-    - ASIHTTPRequest
+  - "QIMKitVendor/HTTP (4.0.53+1)":
+    - AFNetworking
     - CocoaLumberjack
-    - QIMCommonCategories (~> 3.0)
+    - QIMCommonCategories (~> 4.0)
     - QIMKitVendor/DOG
     - QIMKitVendor/JSON
     - QIMKitVendor/PublicRedefineHeader
+    - Reachability
     - ZipArchive
-  - QIMKitVendor/JSON (3.0.10211613):
+  - "QIMKitVendor/JSON (4.0.53+1)":
     - CocoaLumberjack
-    - QIMCommonCategories (~> 3.0)
+    - QIMCommonCategories (~> 4.0)
     - QIMKitVendor/PublicRedefineHeader
+    - Reachability
     - ZipArchive
-  - QIMKitVendor/PinYin (3.0.10211613):
+  - "QIMKitVendor/libwebp (4.0.53+1)":
     - CocoaLumberjack
-    - QIMCommonCategories (~> 3.0)
+    - QIMCommonCategories (~> 4.0)
+    - Reachability
+    - ZipArchive
+  - "QIMKitVendor/PinYin (4.0.53+1)":
+    - CocoaLumberjack
+    - QIMCommonCategories (~> 4.0)
     - QIMKitVendor/PublicRedefineHeader
+    - Reachability
     - ZipArchive
-  - QIMKitVendor/PublicRedefineHeader (3.0.10211613):
+  - "QIMKitVendor/PublicRedefineHeader (4.0.53+1)":
     - CocoaLumberjack
-    - QIMCommonCategories (~> 3.0)
+    - QIMCommonCategories (~> 4.0)
+    - Reachability
     - ZipArchive
-  - QIMKitVendor/SDWebImage (3.0.10211613):
+  - "QIMKitVendor/UUID (4.0.53+1)":
     - CocoaLumberjack
-    - QIMCommonCategories (~> 3.0)
-    - ZipArchive
-  - QIMKitVendor/UUID (3.0.10211613):
-    - CocoaLumberjack
-    - QIMCommonCategories (~> 3.0)
+    - QIMCommonCategories (~> 4.0)
     - QIMKitVendor/PublicRedefineHeader
+    - Reachability
     - UICKeyChainStore
     - ZipArchive
-  - QIMKitVendor/ZBar (3.0.10211613):
+  - "QIMKitVendor/ZBar (4.0.53+1)":
     - CocoaLumberjack
-    - QIMCommonCategories (~> 3.0)
+    - QIMCommonCategories (~> 4.0)
     - QIMKitVendor/PublicRedefineHeader
+    - Reachability
     - ZipArchive
-  - QIMKitVendor/Zip (3.0.10211613):
+  - "QIMKitVendor/Zip (4.0.53+1)":
     - CocoaLumberjack
-    - QIMCommonCategories (~> 3.0)
+    - QIMCommonCategories (~> 4.0)
     - QIMKitVendor/PublicRedefineHeader
+    - Reachability
     - ZipArchive
-  - QIMOpenSSL (1.0.0)
+  - QIMOpenSSL (1.0.4)
   - Reachability (3.2)
   - SQLiteRepairKit (1.2.2):
     - WCDBOptimizedSQLCipher (~> 1.2.0)
-  - UICKeyChainStore (2.1.2)
+  - UICKeyChainStore (2.2.0)
   - WCDB (1.0.7.5):
     - SQLiteRepairKit (~> 1.2.0)
     - WCDBOptimizedSQLCipher (~> 1.2.0)
@@ -119,6 +149,7 @@ PODS:
   - ZipArchive (1.4.0)
 
 DEPENDENCIES:
+  - APWebImage
   - ASIHTTPRequest
   - AvoidCrash
   - CocoaAsyncSocket
@@ -135,12 +166,10 @@ DEPENDENCIES:
   - YYModel
 
 SPEC REPOS:
-  "git@gitlab.corp.qunar.com:qchat/podspec_internal.git":
-    - QIMCommonCategories
-    - QIMDataBase
-    - QIMKitVendor
-    - QIMOpenSSL
-  https://github.com/cocoapods/specs.git:
+  https://code.aliyun.com/mpaas-public/podspecs.git:
+    - APWebImage
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
     - ASIHTTPRequest
     - AvoidCrash
     - CocoaAsyncSocket
@@ -155,20 +184,27 @@ SPEC REPOS:
     - YYDispatchQueuePool
     - YYModel
     - ZipArchive
+  https://github.com/wittech/libqimkit-ios-cook.git:
+    - QIMCommonCategories
+    - QIMDataBase
+    - QIMKitVendor
+    - QIMOpenSSL
 
 SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  APWebImage: 808d17142ca032222a3be2147fd8eddd0b066c24
   ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
   AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
-  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
-  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
   ProtocolBuffers: d509225eb2ea43d9582a59e94348fcf86e2abd65
-  QIMCommonCategories: c53d56b72e3617809a91011ea68cc325445bce66
-  QIMDataBase: 7c7f8445f38c7d75ddead00c12df20a8cca0736b
-  QIMKitVendor: bf729a8def1824ba9f98bf76ece11d403245b2d5
-  QIMOpenSSL: bc85392a133e93273e7b9e7be9bd1a3b29c24461
+  QIMCommonCategories: 4184110b00660f2b782755d56254bf72e1d3d65c
+  QIMDataBase: 61dc346b940600f3c4784058153d632b910cfbb9
+  QIMKitVendor: 3b5fbbf42d3474df516be0cfde948a710ac1c5f2
+  QIMOpenSSL: 6058a67cc078ee7b8777435be5db87317f384f08
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
-  UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
+  UICKeyChainStore: 6a218644594e12f855ec2a10f4fc576c1a69daee
   WCDB: 8e90babdeb7784c569353a4bd22a66c0a175a882
   WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
@@ -176,6 +212,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: a324fbfad592932d87f45d5089d803ca3f135d5d
+PODFILE CHECKSUM: aee49dd9197fd65d91bae4ff74767ca82dff1b04
 
-COCOAPODS: 1.6.0
+COCOAPODS: 1.9.3
