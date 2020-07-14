@@ -1,6 +1,6 @@
 # Uncomment the next line to define a global platform for your project
 plugin "cocoapods-mPaaS", :show_all_specs => true
-mPaaS_baseline '10.1.68-beta'  # 请将 x.x.x 替换成真实基线版本
+mPaaS_baseline '10.1.68'  # 请将 x.x.x 替换成真实基线版本
 mPaaS_version_code 11   # This line is maintained by MPaaS plugin automatically. Please don't modify.
 platform :ios, '9.0'
 source 'https://github.com/CocoaPods/Specs.git'
