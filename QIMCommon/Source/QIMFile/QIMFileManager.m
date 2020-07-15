@@ -7,7 +7,7 @@
 
 #import "QIMFileManager.h"
 #import "QIMStringTransformTools.h"
-#import "QIMKit+QIMEncryptChat.h"
+#import <QIMGeneralModule/QIMEncryptChat.h>
 #import <APWebImage/SDImageCache.h>
 
 #define QIM_MAX_FILE_EXTENSION_LENGTH (NAME_MAX - CC_MD5_DIGEST_LENGTH * 2 - 1)
