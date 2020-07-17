@@ -32,6 +32,6 @@ target 'QIMCommon' do
     pod 'YYDispatchQueuePool'
     pod 'WCDB'
 
-    #增加依赖
-    pod 'APWebImage'
+    #增加依赖，统一调整为Mpaas的SDWebImage，去掉APWebImage
+    pod 'SDWebImage', '~> 1.0.0.200404155527'
 end
