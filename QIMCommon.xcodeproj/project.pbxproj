@@ -116,7 +116,6 @@
 		2C38D71822F2D615006B0AC7 /* QIMXMPPJID.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C38D70A22F2D615006B0AC7 /* QIMXMPPJID.h */; };
 		2C38D71922F2D615006B0AC7 /* QIMPBXmppParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C38D70B22F2D615006B0AC7 /* QIMPBXmppParser.h */; };
 		2C38D71A22F2D615006B0AC7 /* Message.pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C38D70C22F2D615006B0AC7 /* Message.pb.h */; };
-		2C38D71B22F2D615006B0AC7 /* tea.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C38D70D22F2D615006B0AC7 /* tea.h */; };
 		2C38D71C22F2D615006B0AC7 /* QIMPrivatePBCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C38D70E22F2D615006B0AC7 /* QIMPrivatePBCommon.h */; };
 		2C38D71D22F2D615006B0AC7 /* libQIMPrivatePBCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C38D71022F2D615006B0AC7 /* libQIMPrivatePBCommon.a */; };
 		2C38D72022F2DEBD006B0AC7 /* QIMManager+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C38D71E22F2DEBC006B0AC7 /* QIMManager+Search.m */; };
@@ -255,6 +254,59 @@
 		2CB8DB7B2149503000B57B8D /* QIMWomanDefaultHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CB8DB722149502F00B57B8D /* QIMWomanDefaultHeader.png */; };
 		2CB8DB7C2149503000B57B8D /* QIMGroupDefaultHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CB8DB732149502F00B57B8D /* QIMGroupDefaultHeader.png */; };
 		2CB8DB7D2149503000B57B8D /* Activity_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CB8DB742149502F00B57B8D /* Activity_default.png */; };
+		336F11BB24C2B19B00F746C7 /* QIMPrivateCommonLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11BA24C2B19B00F746C7 /* QIMPrivateCommonLog.h */; };
+		336F11F424C2B47C00F746C7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 336F11BD24C2B47C00F746C7 /* LICENSE */; };
+		336F11F524C2B47C00F746C7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 336F11BE24C2B47C00F746C7 /* README.md */; };
+		336F11F624C2B47C00F746C7 /* ObjectivecDescriptor.pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11C224C2B47C00F746C7 /* ObjectivecDescriptor.pb.h */; };
+		336F11F724C2B47C00F746C7 /* Descriptor.pb.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11C324C2B47C00F746C7 /* Descriptor.pb.m */; };
+		336F11F824C2B47C00F746C7 /* ExtendableMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11C424C2B47C00F746C7 /* ExtendableMessage.h */; };
+		336F11F924C2B47C00F746C7 /* CodedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11C524C2B47C00F746C7 /* CodedInputStream.m */; };
+		336F11FA24C2B47C00F746C7 /* MutableField.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11C624C2B47C00F746C7 /* MutableField.m */; };
+		336F11FB24C2B47C00F746C7 /* TextFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11C724C2B47C00F746C7 /* TextFormat.h */; };
+		336F11FC24C2B47C00F746C7 /* ProtocolBuffers.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11C824C2B47C00F746C7 /* ProtocolBuffers.h */; };
+		336F11FD24C2B47C00F746C7 /* CodedOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11C924C2B47C00F746C7 /* CodedOutputStream.h */; };
+		336F11FE24C2B47C00F746C7 /* GeneratedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11CA24C2B47C00F746C7 /* GeneratedMessage.m */; };
+		336F11FF24C2B47C00F746C7 /* ConcreteExtensionField.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11CB24C2B47C00F746C7 /* ConcreteExtensionField.m */; };
+		336F120024C2B47C00F746C7 /* ExtendableMessageBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11CC24C2B47C00F746C7 /* ExtendableMessageBuilder.m */; };
+		336F120124C2B47C00F746C7 /* MessageBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11CD24C2B47C00F746C7 /* MessageBuilder.h */; };
+		336F120224C2B47C00F746C7 /* Field.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11CE24C2B47C00F746C7 /* Field.h */; };
+		336F120324C2B47C00F746C7 /* AbstractMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11CF24C2B47C00F746C7 /* AbstractMessage.h */; };
+		336F120424C2B47C00F746C7 /* UnknownFieldSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11D024C2B47C00F746C7 /* UnknownFieldSet.m */; };
+		336F120524C2B47C00F746C7 /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11D124C2B47C00F746C7 /* Utilities.h */; };
+		336F120624C2B47C00F746C7 /* MutableExtensionRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11D224C2B47C00F746C7 /* MutableExtensionRegistry.m */; };
+		336F120724C2B47C00F746C7 /* Message.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11D324C2B47C00F746C7 /* Message.h */; };
+		336F120824C2B47C00F746C7 /* ExtensionRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11D424C2B47C00F746C7 /* ExtensionRegistry.m */; };
+		336F120924C2B47C00F746C7 /* AbstractMessageBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11D524C2B47C00F746C7 /* AbstractMessageBuilder.m */; };
+		336F120A24C2B47C00F746C7 /* Bootstrap.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11D624C2B47C00F746C7 /* Bootstrap.h */; };
+		336F120B24C2B47C00F746C7 /* RingBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11D724C2B47C00F746C7 /* RingBuffer.m */; };
+		336F120C24C2B47C00F746C7 /* UnknownFieldSetBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11D824C2B47C00F746C7 /* UnknownFieldSetBuilder.h */; };
+		336F120D24C2B47C00F746C7 /* ExtensionField.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11D924C2B47C00F746C7 /* ExtensionField.h */; };
+		336F120E24C2B47C00F746C7 /* GeneratedMessageBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11DA24C2B47C00F746C7 /* GeneratedMessageBuilder.m */; };
+		336F120F24C2B47C00F746C7 /* WireFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11DB24C2B47C00F746C7 /* WireFormat.h */; };
+		336F121024C2B47C00F746C7 /* PBArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11DC24C2B47C00F746C7 /* PBArray.m */; };
+		336F121124C2B47C00F746C7 /* TextFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11DD24C2B47C00F746C7 /* TextFormat.m */; };
+		336F121224C2B47C00F746C7 /* MutableField.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11DE24C2B47C00F746C7 /* MutableField.h */; };
+		336F121324C2B47C00F746C7 /* ExtendableMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11DF24C2B47C00F746C7 /* ExtendableMessage.m */; };
+		336F121424C2B47C00F746C7 /* CodedInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11E024C2B47C00F746C7 /* CodedInputStream.h */; };
+		336F121524C2B47C00F746C7 /* Descriptor.pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11E124C2B47C00F746C7 /* Descriptor.pb.h */; };
+		336F121624C2B47C00F746C7 /* ObjectivecDescriptor.pb.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11E224C2B47C00F746C7 /* ObjectivecDescriptor.pb.m */; };
+		336F121724C2B47C00F746C7 /* ForwardDeclarations.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11E324C2B47C00F746C7 /* ForwardDeclarations.h */; };
+		336F121824C2B47C00F746C7 /* GeneratedMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11E424C2B47C00F746C7 /* GeneratedMessage.h */; };
+		336F121924C2B47C00F746C7 /* CodedOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11E524C2B47C00F746C7 /* CodedOutputStream.m */; };
+		336F121A24C2B47C00F746C7 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11E624C2B47C00F746C7 /* Utilities.m */; };
+		336F121B24C2B47C00F746C7 /* AbstractMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11E724C2B47C00F746C7 /* AbstractMessage.m */; };
+		336F121C24C2B47C00F746C7 /* UnknownFieldSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11E824C2B47C00F746C7 /* UnknownFieldSet.h */; };
+		336F121D24C2B47C00F746C7 /* Field.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11E924C2B47C00F746C7 /* Field.m */; };
+		336F121E24C2B47C00F746C7 /* ExtendableMessageBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11EA24C2B47C00F746C7 /* ExtendableMessageBuilder.h */; };
+		336F121F24C2B47C00F746C7 /* ConcreteExtensionField.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11EB24C2B47C00F746C7 /* ConcreteExtensionField.h */; };
+		336F122024C2B47C00F746C7 /* WireFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11EC24C2B47C00F746C7 /* WireFormat.m */; };
+		336F122124C2B47C00F746C7 /* PBArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11ED24C2B47C00F746C7 /* PBArray.h */; };
+		336F122224C2B47C00F746C7 /* GeneratedMessageBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11EE24C2B47C00F746C7 /* GeneratedMessageBuilder.h */; };
+		336F122324C2B47C00F746C7 /* UnknownFieldSetBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 336F11EF24C2B47C00F746C7 /* UnknownFieldSetBuilder.m */; };
+		336F122424C2B47C00F746C7 /* RingBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11F024C2B47C00F746C7 /* RingBuffer.h */; };
+		336F122524C2B47C00F746C7 /* AbstractMessageBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11F124C2B47C00F746C7 /* AbstractMessageBuilder.h */; };
+		336F122624C2B47C00F746C7 /* ExtensionRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11F224C2B47C00F746C7 /* ExtensionRegistry.h */; };
+		336F122724C2B47C00F746C7 /* MutableExtensionRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F11F324C2B47C00F746C7 /* MutableExtensionRegistry.h */; };
 		33E0193924B357D500946692 /* QIMManager+Pay.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E0193724B357D500946692 /* QIMManager+Pay.h */; };
 		33E0193A24B357D500946692 /* QIMManager+Pay.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E0193824B357D500946692 /* QIMManager+Pay.m */; };
 		33E0193D24B3582200946692 /* QIMKit+QIMSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E0193B24B3582200946692 /* QIMKit+QIMSearch.m */; };
@@ -358,7 +410,6 @@
 		2C38D70A22F2D615006B0AC7 /* QIMXMPPJID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIMXMPPJID.h; sourceTree = "<group>"; };
 		2C38D70B22F2D615006B0AC7 /* QIMPBXmppParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIMPBXmppParser.h; sourceTree = "<group>"; };
 		2C38D70C22F2D615006B0AC7 /* Message.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.pb.h; sourceTree = "<group>"; };
-		2C38D70D22F2D615006B0AC7 /* tea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tea.h; sourceTree = "<group>"; };
 		2C38D70E22F2D615006B0AC7 /* QIMPrivatePBCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIMPrivatePBCommon.h; sourceTree = "<group>"; };
 		2C38D71022F2D615006B0AC7 /* libQIMPrivatePBCommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libQIMPrivatePBCommon.a; sourceTree = "<group>"; };
 		2C38D71E22F2DEBC006B0AC7 /* QIMManager+Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QIMManager+Search.m"; sourceTree = "<group>"; };
@@ -499,6 +550,59 @@
 		2CB8DB722149502F00B57B8D /* QIMWomanDefaultHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QIMWomanDefaultHeader.png; sourceTree = "<group>"; };
 		2CB8DB732149502F00B57B8D /* QIMGroupDefaultHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QIMGroupDefaultHeader.png; sourceTree = "<group>"; };
 		2CB8DB742149502F00B57B8D /* Activity_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Activity_default.png; sourceTree = "<group>"; };
+		336F11BA24C2B19B00F746C7 /* QIMPrivateCommonLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QIMPrivateCommonLog.h; sourceTree = "<group>"; };
+		336F11BD24C2B47C00F746C7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		336F11BE24C2B47C00F746C7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		336F11C224C2B47C00F746C7 /* ObjectivecDescriptor.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectivecDescriptor.pb.h; sourceTree = "<group>"; };
+		336F11C324C2B47C00F746C7 /* Descriptor.pb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Descriptor.pb.m; sourceTree = "<group>"; };
+		336F11C424C2B47C00F746C7 /* ExtendableMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendableMessage.h; sourceTree = "<group>"; };
+		336F11C524C2B47C00F746C7 /* CodedInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodedInputStream.m; sourceTree = "<group>"; };
+		336F11C624C2B47C00F746C7 /* MutableField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutableField.m; sourceTree = "<group>"; };
+		336F11C724C2B47C00F746C7 /* TextFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFormat.h; sourceTree = "<group>"; };
+		336F11C824C2B47C00F746C7 /* ProtocolBuffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolBuffers.h; sourceTree = "<group>"; };
+		336F11C924C2B47C00F746C7 /* CodedOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodedOutputStream.h; sourceTree = "<group>"; };
+		336F11CA24C2B47C00F746C7 /* GeneratedMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedMessage.m; sourceTree = "<group>"; };
+		336F11CB24C2B47C00F746C7 /* ConcreteExtensionField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteExtensionField.m; sourceTree = "<group>"; };
+		336F11CC24C2B47C00F746C7 /* ExtendableMessageBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendableMessageBuilder.m; sourceTree = "<group>"; };
+		336F11CD24C2B47C00F746C7 /* MessageBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageBuilder.h; sourceTree = "<group>"; };
+		336F11CE24C2B47C00F746C7 /* Field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Field.h; sourceTree = "<group>"; };
+		336F11CF24C2B47C00F746C7 /* AbstractMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractMessage.h; sourceTree = "<group>"; };
+		336F11D024C2B47C00F746C7 /* UnknownFieldSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnknownFieldSet.m; sourceTree = "<group>"; };
+		336F11D124C2B47C00F746C7 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		336F11D224C2B47C00F746C7 /* MutableExtensionRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutableExtensionRegistry.m; sourceTree = "<group>"; };
+		336F11D324C2B47C00F746C7 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		336F11D424C2B47C00F746C7 /* ExtensionRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtensionRegistry.m; sourceTree = "<group>"; };
+		336F11D524C2B47C00F746C7 /* AbstractMessageBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractMessageBuilder.m; sourceTree = "<group>"; };
+		336F11D624C2B47C00F746C7 /* Bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bootstrap.h; sourceTree = "<group>"; };
+		336F11D724C2B47C00F746C7 /* RingBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RingBuffer.m; sourceTree = "<group>"; };
+		336F11D824C2B47C00F746C7 /* UnknownFieldSetBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnknownFieldSetBuilder.h; sourceTree = "<group>"; };
+		336F11D924C2B47C00F746C7 /* ExtensionField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionField.h; sourceTree = "<group>"; };
+		336F11DA24C2B47C00F746C7 /* GeneratedMessageBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedMessageBuilder.m; sourceTree = "<group>"; };
+		336F11DB24C2B47C00F746C7 /* WireFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WireFormat.h; sourceTree = "<group>"; };
+		336F11DC24C2B47C00F746C7 /* PBArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBArray.m; sourceTree = "<group>"; };
+		336F11DD24C2B47C00F746C7 /* TextFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFormat.m; sourceTree = "<group>"; };
+		336F11DE24C2B47C00F746C7 /* MutableField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutableField.h; sourceTree = "<group>"; };
+		336F11DF24C2B47C00F746C7 /* ExtendableMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendableMessage.m; sourceTree = "<group>"; };
+		336F11E024C2B47C00F746C7 /* CodedInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodedInputStream.h; sourceTree = "<group>"; };
+		336F11E124C2B47C00F746C7 /* Descriptor.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Descriptor.pb.h; sourceTree = "<group>"; };
+		336F11E224C2B47C00F746C7 /* ObjectivecDescriptor.pb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectivecDescriptor.pb.m; sourceTree = "<group>"; };
+		336F11E324C2B47C00F746C7 /* ForwardDeclarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForwardDeclarations.h; sourceTree = "<group>"; };
+		336F11E424C2B47C00F746C7 /* GeneratedMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneratedMessage.h; sourceTree = "<group>"; };
+		336F11E524C2B47C00F746C7 /* CodedOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodedOutputStream.m; sourceTree = "<group>"; };
+		336F11E624C2B47C00F746C7 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		336F11E724C2B47C00F746C7 /* AbstractMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractMessage.m; sourceTree = "<group>"; };
+		336F11E824C2B47C00F746C7 /* UnknownFieldSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnknownFieldSet.h; sourceTree = "<group>"; };
+		336F11E924C2B47C00F746C7 /* Field.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Field.m; sourceTree = "<group>"; };
+		336F11EA24C2B47C00F746C7 /* ExtendableMessageBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendableMessageBuilder.h; sourceTree = "<group>"; };
+		336F11EB24C2B47C00F746C7 /* ConcreteExtensionField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteExtensionField.h; sourceTree = "<group>"; };
+		336F11EC24C2B47C00F746C7 /* WireFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WireFormat.m; sourceTree = "<group>"; };
+		336F11ED24C2B47C00F746C7 /* PBArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBArray.h; sourceTree = "<group>"; };
+		336F11EE24C2B47C00F746C7 /* GeneratedMessageBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneratedMessageBuilder.h; sourceTree = "<group>"; };
+		336F11EF24C2B47C00F746C7 /* UnknownFieldSetBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnknownFieldSetBuilder.m; sourceTree = "<group>"; };
+		336F11F024C2B47C00F746C7 /* RingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingBuffer.h; sourceTree = "<group>"; };
+		336F11F124C2B47C00F746C7 /* AbstractMessageBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractMessageBuilder.h; sourceTree = "<group>"; };
+		336F11F224C2B47C00F746C7 /* ExtensionRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionRegistry.h; sourceTree = "<group>"; };
+		336F11F324C2B47C00F746C7 /* MutableExtensionRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutableExtensionRegistry.h; sourceTree = "<group>"; };
 		33E0193724B357D500946692 /* QIMManager+Pay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QIMManager+Pay.h"; sourceTree = "<group>"; };
 		33E0193824B357D500946692 /* QIMManager+Pay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QIMManager+Pay.m"; sourceTree = "<group>"; };
 		33E0193B24B3582200946692 /* QIMKit+QIMSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QIMKit+QIMSearch.m"; sourceTree = "<group>"; };
@@ -681,6 +785,7 @@
 		2C38D70222F2D615006B0AC7 /* QIMPrivatePBCommon */ = {
 			isa = PBXGroup;
 			children = (
+				336F11BA24C2B19B00F746C7 /* QIMPrivateCommonLog.h */,
 				2C38D70322F2D615006B0AC7 /* QIMXMPPStringPrep.h */,
 				2C38D70422F2D615006B0AC7 /* IQMessage+Utility.h */,
 				2C38D70522F2D615006B0AC7 /* QIMProtobufModel.h */,
@@ -691,7 +796,6 @@
 				2C38D70A22F2D615006B0AC7 /* QIMXMPPJID.h */,
 				2C38D70B22F2D615006B0AC7 /* QIMPBXmppParser.h */,
 				2C38D70C22F2D615006B0AC7 /* Message.pb.h */,
-				2C38D70D22F2D615006B0AC7 /* tea.h */,
 				2C38D70E22F2D615006B0AC7 /* QIMPrivatePBCommon.h */,
 			);
 			path = QIMPrivatePBCommon;
@@ -767,6 +871,7 @@
 		2CB8D9E421494B1D00B57B8D /* QIMCommon */ = {
 			isa = PBXGroup;
 			children = (
+				336F11BC24C2B47C00F746C7 /* ProtocolBuffers */,
 				2C38D70022F2D615006B0AC7 /* QIMPrivatePBCommonFramework */,
 				2CB8D9E621494B1D00B57B8D /* Info.plist */,
 				2CB8D9E521494B1D00B57B8D /* QIMCommon.h */,
@@ -922,6 +1027,89 @@
 			path = QIMKitCommonResource;
 			sourceTree = "<group>";
 		};
+		336F11BC24C2B47C00F746C7 /* ProtocolBuffers */ = {
+			isa = PBXGroup;
+			children = (
+				336F11BD24C2B47C00F746C7 /* LICENSE */,
+				336F11BE24C2B47C00F746C7 /* README.md */,
+				336F11BF24C2B47C00F746C7 /* src */,
+			);
+			path = ProtocolBuffers;
+			sourceTree = "<group>";
+		};
+		336F11BF24C2B47C00F746C7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				336F11C024C2B47C00F746C7 /* runtime */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		336F11C024C2B47C00F746C7 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				336F11C124C2B47C00F746C7 /* Classes */,
+			);
+			path = runtime;
+			sourceTree = "<group>";
+		};
+		336F11C124C2B47C00F746C7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				336F11C224C2B47C00F746C7 /* ObjectivecDescriptor.pb.h */,
+				336F11C324C2B47C00F746C7 /* Descriptor.pb.m */,
+				336F11C424C2B47C00F746C7 /* ExtendableMessage.h */,
+				336F11C524C2B47C00F746C7 /* CodedInputStream.m */,
+				336F11C624C2B47C00F746C7 /* MutableField.m */,
+				336F11C724C2B47C00F746C7 /* TextFormat.h */,
+				336F11C824C2B47C00F746C7 /* ProtocolBuffers.h */,
+				336F11C924C2B47C00F746C7 /* CodedOutputStream.h */,
+				336F11CA24C2B47C00F746C7 /* GeneratedMessage.m */,
+				336F11CB24C2B47C00F746C7 /* ConcreteExtensionField.m */,
+				336F11CC24C2B47C00F746C7 /* ExtendableMessageBuilder.m */,
+				336F11CD24C2B47C00F746C7 /* MessageBuilder.h */,
+				336F11CE24C2B47C00F746C7 /* Field.h */,
+				336F11CF24C2B47C00F746C7 /* AbstractMessage.h */,
+				336F11D024C2B47C00F746C7 /* UnknownFieldSet.m */,
+				336F11D124C2B47C00F746C7 /* Utilities.h */,
+				336F11D224C2B47C00F746C7 /* MutableExtensionRegistry.m */,
+				336F11D324C2B47C00F746C7 /* Message.h */,
+				336F11D424C2B47C00F746C7 /* ExtensionRegistry.m */,
+				336F11D524C2B47C00F746C7 /* AbstractMessageBuilder.m */,
+				336F11D624C2B47C00F746C7 /* Bootstrap.h */,
+				336F11D724C2B47C00F746C7 /* RingBuffer.m */,
+				336F11D824C2B47C00F746C7 /* UnknownFieldSetBuilder.h */,
+				336F11D924C2B47C00F746C7 /* ExtensionField.h */,
+				336F11DA24C2B47C00F746C7 /* GeneratedMessageBuilder.m */,
+				336F11DB24C2B47C00F746C7 /* WireFormat.h */,
+				336F11DC24C2B47C00F746C7 /* PBArray.m */,
+				336F11DD24C2B47C00F746C7 /* TextFormat.m */,
+				336F11DE24C2B47C00F746C7 /* MutableField.h */,
+				336F11DF24C2B47C00F746C7 /* ExtendableMessage.m */,
+				336F11E024C2B47C00F746C7 /* CodedInputStream.h */,
+				336F11E124C2B47C00F746C7 /* Descriptor.pb.h */,
+				336F11E224C2B47C00F746C7 /* ObjectivecDescriptor.pb.m */,
+				336F11E324C2B47C00F746C7 /* ForwardDeclarations.h */,
+				336F11E424C2B47C00F746C7 /* GeneratedMessage.h */,
+				336F11E524C2B47C00F746C7 /* CodedOutputStream.m */,
+				336F11E624C2B47C00F746C7 /* Utilities.m */,
+				336F11E724C2B47C00F746C7 /* AbstractMessage.m */,
+				336F11E824C2B47C00F746C7 /* UnknownFieldSet.h */,
+				336F11E924C2B47C00F746C7 /* Field.m */,
+				336F11EA24C2B47C00F746C7 /* ExtendableMessageBuilder.h */,
+				336F11EB24C2B47C00F746C7 /* ConcreteExtensionField.h */,
+				336F11EC24C2B47C00F746C7 /* WireFormat.m */,
+				336F11ED24C2B47C00F746C7 /* PBArray.h */,
+				336F11EE24C2B47C00F746C7 /* GeneratedMessageBuilder.h */,
+				336F11EF24C2B47C00F746C7 /* UnknownFieldSetBuilder.m */,
+				336F11F024C2B47C00F746C7 /* RingBuffer.h */,
+				336F11F124C2B47C00F746C7 /* AbstractMessageBuilder.h */,
+				336F11F224C2B47C00F746C7 /* ExtensionRegistry.h */,
+				336F11F324C2B47C00F746C7 /* MutableExtensionRegistry.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		47D61FA6D567EECE539E68B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -937,7 +1125,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C38D71B22F2D615006B0AC7 /* tea.h in Headers */,
 				2C8C4290223FDAD600F34F6B /* QIMDatasourceItemManager.h in Headers */,
 				2C8DF1DE21D50DE0001A3B0E /* QIMVoiceNoReadStateManager.h in Headers */,
 				2C06A00922042C75000CAF37 /* QIMKit+QIMWorkFeed.h in Headers */,
@@ -945,11 +1132,15 @@
 				2C8DF1E121D50DE0001A3B0E /* QIMDataController.h in Headers */,
 				2C38D71822F2D615006B0AC7 /* QIMXMPPJID.h in Headers */,
 				2C8DF1E321D50DE0001A3B0E /* QIMContactDatasourceManager.h in Headers */,
+				336F121424C2B47C00F746C7 /* CodedInputStream.h in Headers */,
+				336F120D24C2B47C00F746C7 /* ExtensionField.h in Headers */,
 				2C8DF1E021D50DE0001A3B0E /* QIMDatasourceItem.h in Headers */,
 				2C8DF1DC21D50DE0001A3B0E /* QIMAdvertItem.h in Headers */,
 				2C5AA0F622E8301700201F2A /* QIMDBLogger.h in Headers */,
+				336F11F824C2B47C00F746C7 /* ExtendableMessage.h in Headers */,
 				2C1D0F45215E502C00275225 /* QIMAppInfo.h in Headers */,
 				2C38D71122F2D615006B0AC7 /* QIMXMPPStringPrep.h in Headers */,
+				336F120C24C2B47C00F746C7 /* UnknownFieldSetBuilder.h in Headers */,
 				2CB8DA8521494C1800B57B8D /* QIMConfigKeys.h in Headers */,
 				2C1D0F4D215E503100275225 /* QIMUserCacheManager.h in Headers */,
 				2C1D0F3F215E4F5E00275225 /* QIMManager+QuickReply.h in Headers */,
@@ -961,6 +1152,7 @@
 				2CB8DA6621494C1800B57B8D /* QIMKit+QIMCollection.h in Headers */,
 				2CB8DA9E21494C1800B57B8D /* QIMKit+QIMNavConfig.h in Headers */,
 				2C5AA0E122E8301700201F2A /* IMDataManager+QIMDBQuickReply.h in Headers */,
+				336F11F624C2B47C00F746C7 /* ObjectivecDescriptor.pb.h in Headers */,
 				2C2A798F221578D300AF2153 /* QIMManager+PublicNavUserManager.h in Headers */,
 				2CB8DA8121494C1800B57B8D /* QIMKit+QIMPublicRobot.h in Headers */,
 				2CB8DA6021494C1800B57B8D /* QIMKit+QIMGroupMessage.h in Headers */,
@@ -972,44 +1164,60 @@
 				2CB8DA8E21494C1800B57B8D /* QIMKit+QIMDB.h in Headers */,
 				2C1D0F5A215E504000275225 /* QIMMessageManager.h in Headers */,
 				2CB8DA8721494C1800B57B8D /* QIMKit+QIMUserVcard.h in Headers */,
+				336F121824C2B47C00F746C7 /* GeneratedMessage.h in Headers */,
 				2CB8DA9B21494C1800B57B8D /* QIMKit+QIMSession.h in Headers */,
 				2C1D0F29215E4F5E00275225 /* QIMManager+Helper.h in Headers */,
+				336F120F24C2B47C00F746C7 /* WireFormat.h in Headers */,
 				2CB8DA5D21494C1800B57B8D /* QIMKit+QIMMessage.h in Headers */,
 				2CB8DA6721494C1800B57B8D /* QIMKit+QIMLogin.h in Headers */,
 				2CB8DA6C21494C1800B57B8D /* QIMKit+QIMresetLoginInfo.h in Headers */,
 				2CB8DA7F21494C1800B57B8D /* QIMKit+QIMShareExtension.h in Headers */,
+				336F122624C2B47C00F746C7 /* ExtensionRegistry.h in Headers */,
 				2C2A79932215791100AF2153 /* QIMKit+QIMPublicNavUserManager.h in Headers */,
+				336F11FB24C2B47C00F746C7 /* TextFormat.h in Headers */,
 				2C2839C22265C750007C9DFE /* QIMKit+QIMAPPFound.h in Headers */,
+				336F122424C2B47C00F746C7 /* RingBuffer.h in Headers */,
 				2C1D0F22215E4F5E00275225 /* QIMManager+Session.h in Headers */,
 				2CB8DA9221494C1800B57B8D /* QIMKit+QIMDBDataManager.h in Headers */,
 				2CB8DA6421494C1800B57B8D /* QIMNotificationKeys.h in Headers */,
+				336F120324C2B47C00F746C7 /* AbstractMessage.h in Headers */,
 				2C099BAE21BF8BB700F7692A /* QIMKit+QIMUserMedal.h in Headers */,
 				2C09E4F521902B880083154F /* QIMKit+QIMTPRequest.h in Headers */,
+				336F120124C2B47C00F746C7 /* MessageBuilder.h in Headers */,
 				2C67A8DE21889841007C6E4C /* QIMKit+QIMMiddleVirtualAccountManager.h in Headers */,
 				2C1D0F55215E503700275225 /* QIMFileManager.h in Headers */,
 				2CB8DA7A21494C1800B57B8D /* QIMKit+QIMMessageManager.h in Headers */,
 				2C38D71422F2D615006B0AC7 /* XmppImManager.h in Headers */,
 				2C06A00522042C67000CAF37 /* QIMManager+WorkFeed.h in Headers */,
+				336F120524C2B47C00F746C7 /* Utilities.h in Headers */,
 				2CB8DA9421494C1800B57B8D /* QIMKit+QIMClientConfig.h in Headers */,
 				2C38D71922F2D615006B0AC7 /* QIMPBXmppParser.h in Headers */,
 				2C1D0F3B215E4F5E00275225 /* QIMManager+MySelfStatus.h in Headers */,
+				336F120224C2B47C00F746C7 /* Field.h in Headers */,
 				2C38D71522F2D615006B0AC7 /* QIMPBStream.h in Headers */,
+				336F121224C2B47C00F746C7 /* MutableField.h in Headers */,
 				2CB8DA7021494C1800B57B8D /* QIMKit+QIMAppSetting.h in Headers */,
 				2CB8DA5821494C1800B57B8D /* QIMKit+QIMFileManager.h in Headers */,
 				2C5AA0FB22E8301700201F2A /* IMDataManager+QIMDBPublicNumber.h in Headers */,
 				2C38D72122F2DEBD006B0AC7 /* QIMManager+Search.h in Headers */,
+				336F11BB24C2B19B00F746C7 /* QIMPrivateCommonLog.h in Headers */,
 				2CB8DA8821494C1800B57B8D /* QIMKit+QIMKeyChain.h in Headers */,
 				2C1D0F15215E4F5E00275225 /* QIMManager+Collection.h in Headers */,
 				2CB8DA9A21494C1800B57B8D /* QIMKit+QIMQuickReply.h in Headers */,
 				2C1D0F32215E4F5E00275225 /* QIMManager+Friend.h in Headers */,
 				2C1D0F2C215E4F5E00275225 /* QIMManager+DB.h in Headers */,
+				336F121E24C2B47C00F746C7 /* ExtendableMessageBuilder.h in Headers */,
+				336F121F24C2B47C00F746C7 /* ConcreteExtensionField.h in Headers */,
 				2CB8DA5C21494C1800B57B8D /* QIMKit+QIMAppInfo.h in Headers */,
+				336F11FC24C2B47C00F746C7 /* ProtocolBuffers.h in Headers */,
 				2C5AA0EB22E8301700201F2A /* IMDataManager+QIMDBGroup.h in Headers */,
 				2C1D0F16215E4F5E00275225 /* QIMManager+Login.h in Headers */,
 				2C38D71622F2D615006B0AC7 /* QIMPBStack.h in Headers */,
+				336F122724C2B47C00F746C7 /* MutableExtensionRegistry.h in Headers */,
 				2CB8DA7721494C1800B57B8D /* QIMKit+QIMUserCacheManager.h in Headers */,
 				2CB8DA6A21494C1800B57B8D /* QIMKit+QIMEncryptChat.h in Headers */,
 				2C67A8DA2188976A007C6E4C /* QIMManager+MiddleVirtualAccountManager.h in Headers */,
+				336F121C24C2B47C00F746C7 /* UnknownFieldSet.h in Headers */,
 				2C95DE2F2176194C0090BC54 /* QIMHttpAPIBlock.h in Headers */,
 				2CB8DAA221494C1800B57B8D /* QIMKit+QIMNetWork.h in Headers */,
 				2C5AA0EA22E8301700201F2A /* IMDataManager+QIMDBClientConfig.h in Headers */,
@@ -1021,20 +1229,27 @@
 				2CB8DA9021494C1800B57B8D /* QIMKit+QIMMySelfStatus.h in Headers */,
 				2C1D0F23215E4F5E00275225 /* QIMManager+UserVcard.h in Headers */,
 				2C5AA0FE22E8301700201F2A /* IMDataManager+QIMDBMessage.h in Headers */,
+				336F11FD24C2B47C00F746C7 /* CodedOutputStream.h in Headers */,
 				2CB8DA5921494C1800B57B8D /* QIMKit+QIMSingleMessage.h in Headers */,
 				2C5AA0E322E8301700201F2A /* IMDataManager+QIMSearchKeyHistory.h in Headers */,
+				336F121524C2B47C00F746C7 /* Descriptor.pb.h in Headers */,
 				2C5AA0F422E8301700201F2A /* IMDataManager+QIMDBFriend.h in Headers */,
+				336F122124C2B47C00F746C7 /* PBArray.h in Headers */,
 				2C1D0F25215E4F5E00275225 /* QIMManager+PublicRobot.h in Headers */,
 				2CB8DA7E21494C1800B57B8D /* QIMKit+QIMCalendar.h in Headers */,
 				2C1D0F1C215E4F5E00275225 /* QIMManager+Consult.h in Headers */,
 				2CB8DA9321494C1800B57B8D /* QIMKit+QIMFriend.h in Headers */,
 				2C2839BE2265C6F5007C9DFE /* QIMManager+Found.h in Headers */,
+				336F121724C2B47C00F746C7 /* ForwardDeclarations.h in Headers */,
+				336F120A24C2B47C00F746C7 /* Bootstrap.h in Headers */,
 				2CB8DA8B21494C1800B57B8D /* QIMKit.h in Headers */,
 				2CB8DA6D21494C1800B57B8D /* QIMKitPublicHeader.h in Headers */,
 				33E0193E24B3582200946692 /* QIMKit+QIMSearch.h in Headers */,
 				2C1D0F2E215E4F5E00275225 /* QIMManager+Message.h in Headers */,
 				2C1D0F2A215E4F5E00275225 /* QIMManager+ClientConfig.h in Headers */,
+				336F120724C2B47C00F746C7 /* Message.h in Headers */,
 				2C1D0EDE215E4F5300275225 /* QIMNavConfigManager.h in Headers */,
+				336F122524C2B47C00F746C7 /* AbstractMessageBuilder.h in Headers */,
 				2C1D0F20215E4F5E00275225 /* QIMManager+GroupMessage.h in Headers */,
 				2CB8DB0221494C2000B57B8D /* QIMPrivateHeader.h in Headers */,
 				2C38D71722F2D615006B0AC7 /* ProtobufReconnector.h in Headers */,
@@ -1044,6 +1259,7 @@
 				2C1D0F1E215E4F5E00275225 /* QIMManager+resetLoginInfo.h in Headers */,
 				2C1D0F2F215E4F5E00275225 /* QIMManager+KeyChain.h in Headers */,
 				2C1D0F21215E4F5E00275225 /* QIMManager+SingleMessage.h in Headers */,
+				336F122224C2B47C00F746C7 /* GeneratedMessageBuilder.h in Headers */,
 				2C5AA0EE22E8301700201F2A /* IMDataManager+QIMFoundList.h in Headers */,
 				2C09E4F121902B500083154F /* QIMManager+Request.h in Headers */,
 				2CB8D9E721494B1D00B57B8D /* QIMCommon.h in Headers */,
@@ -1129,10 +1345,12 @@
 			files = (
 				2CB8DB7D2149503000B57B8D /* Activity_default.png in Resources */,
 				2CB8DB792149503000B57B8D /* hongbao.aac in Resources */,
+				336F11F524C2B47C00F746C7 /* README.md in Resources */,
 				2CB8DB7A2149503000B57B8D /* rsa_public_key.pem in Resources */,
 				2CB8DB7C2149503000B57B8D /* QIMGroupDefaultHeader.png in Resources */,
 				2CB8DB782149503000B57B8D /* QIMManDefaultHeader.png in Resources */,
 				2CB8DB7B2149503000B57B8D /* QIMWomanDefaultHeader.png in Resources */,
+				336F11F424C2B47C00F746C7 /* LICENSE in Resources */,
 				2CB8DB772149503000B57B8D /* robot_default_header@2x.png in Resources */,
 				2CB8DB762149503000B57B8D /* in.caf in Resources */,
 			);
@@ -1202,6 +1420,8 @@
 				2C8DF1E421D50DE0001A3B0E /* QIMDatasourceItem.m in Sources */,
 				2CB8DA8421494C1800B57B8D /* QIMKit+QIMMessage.m in Sources */,
 				2C1D0F27215E4F5E00275225 /* QIMManager+MySelfStatus.m in Sources */,
+				336F11FE24C2B47C00F746C7 /* GeneratedMessage.m in Sources */,
+				336F120E24C2B47C00F746C7 /* GeneratedMessageBuilder.m in Sources */,
 				2C8DF1DB21D50DE0001A3B0E /* QIMAdvertItem.m in Sources */,
 				2C09E4F221902B500083154F /* QIMManager+Request.m in Sources */,
 				2CB8DA5B21494C1800B57B8D /* QIMKit+QIMUserVcard.m in Sources */,
@@ -1217,12 +1437,16 @@
 				2C1D0F37215E4F5E00275225 /* QIMManager+resetLoginInfo.m in Sources */,
 				2C1D0F3E215E4F5E00275225 /* QIMManager+UserVcard.m in Sources */,
 				2CB8DA7221494C1800B57B8D /* QIMKit+QIMFriend.m in Sources */,
+				336F121124C2B47C00F746C7 /* TextFormat.m in Sources */,
 				2C06A00422042C67000CAF37 /* QIMManager+WorkFeed.m in Sources */,
 				2CB8DA8621494C1800B57B8D /* QIMKit+QIMAppInfo.m in Sources */,
 				33E0193D24B3582200946692 /* QIMKit+QIMSearch.m in Sources */,
+				336F11FA24C2B47C00F746C7 /* MutableField.m in Sources */,
 				2C1D0F53215E503700275225 /* QIMFileManager.m in Sources */,
+				336F120824C2B47C00F746C7 /* ExtensionRegistry.m in Sources */,
 				2CB8DA6521494C1800B57B8D /* QIMKit+QIMMySelfStatus.m in Sources */,
 				2C099BAB21BF8B7E00F7692A /* QIMManager+UserMedal.m in Sources */,
+				336F120B24C2B47C00F746C7 /* RingBuffer.m in Sources */,
 				2C8C4291223FDAD600F34F6B /* QIMDatasourceItemManager.m in Sources */,
 				2CB8DA7921494C1800B57B8D /* QIMKit+QIMNavConfig.m in Sources */,
 				2C06A00A22042C75000CAF37 /* QIMKit+QIMWorkFeed.m in Sources */,
@@ -1232,10 +1456,12 @@
 				2C5AA0F122E8301700201F2A /* IMDataManager+QIMUserMedal.m in Sources */,
 				2C1D0F13215E4F5E00275225 /* QIMManager+Friend.m in Sources */,
 				2CB8DA7B21494C1800B57B8D /* QIMKit+QIMSession.m in Sources */,
+				336F121B24C2B47C00F746C7 /* AbstractMessage.m in Sources */,
 				2C8DF1DD21D50DE0001A3B0E /* QIMRSACoder.m in Sources */,
 				2C1D0F33215E4F5E00275225 /* QIMManager+Session.m in Sources */,
 				2C67A8DF21889841007C6E4C /* QIMKit+QIMMiddleVirtualAccountManager.m in Sources */,
 				2CB8DA7321494C1800B57B8D /* QIMKit+QIMDBDataManager.m in Sources */,
+				336F120924C2B47C00F746C7 /* AbstractMessageBuilder.m in Sources */,
 				2CB8DA9821494C1800B57B8D /* QIMKit+QIMresetLoginInfo.m in Sources */,
 				2CB8DA6321494C1800B57B8D /* QIMKit+QIMCalendar.m in Sources */,
 				2C1D0F34215E4F5E00275225 /* QIMManager+SingleMessage.m in Sources */,
@@ -1245,6 +1471,7 @@
 				2C1D0F36215E4F5E00275225 /* QIMManager+Group.m in Sources */,
 				33E0193A24B357D500946692 /* QIMManager+Pay.m in Sources */,
 				2C8DF1DA21D50DE0001A3B0E /* QIMDataController.m in Sources */,
+				336F121624C2B47C00F746C7 /* ObjectivecDescriptor.pb.m in Sources */,
 				2C95DE302176194C0090BC54 /* QIMHttpAPIBlock.m in Sources */,
 				2C1D0F4C215E503100275225 /* QIMUserCacheManager.m in Sources */,
 				2C5AA0EF22E8301700201F2A /* IMDataManager+QIMDBQuickReply.m in Sources */,
@@ -1254,10 +1481,12 @@
 				2C2A7990221578D300AF2153 /* QIMManager+PublicNavUserManager.m in Sources */,
 				2C1D0F1D215E4F5E00275225 /* QIMManager+EncryptChat.m in Sources */,
 				2C5AA0F322E8301700201F2A /* IMDataManager+QIMCalendar.m in Sources */,
+				336F122324C2B47C00F746C7 /* UnknownFieldSetBuilder.m in Sources */,
 				2C1D0F18215E4F5E00275225 /* QIMManager+KeyChain.m in Sources */,
 				2CB8DA7121494C1800B57B8D /* QIMKit+QIMClientConfig.m in Sources */,
 				2CB8DA6B21494C1800B57B8D /* QIMKit.m in Sources */,
 				2C1D0F10215E4F5D00275225 /* QIMManager+ClientConfig.m in Sources */,
+				336F121A24C2B47C00F746C7 /* Utilities.m in Sources */,
 				2CB8DA7421494C1800B57B8D /* QIMKit+QIMNetWork.m in Sources */,
 				2C5AA0E822E8301700201F2A /* QIMDBLogger.m in Sources */,
 				2C1D0F30215E4F5E00275225 /* QIMManager+Collection.m in Sources */,
@@ -1266,24 +1495,33 @@
 				2C1D0F39215E4F5E00275225 /* QIMManager+Consult.m in Sources */,
 				2CB8DA8221494C1800B57B8D /* QIMKit+QIMGroupMessage.m in Sources */,
 				2C1D0F63215E504A00275225 /* QIMSchemaManager.m in Sources */,
+				336F11F724C2B47C00F746C7 /* Descriptor.pb.m in Sources */,
 				2CB8DA8D21494C1800B57B8D /* QIMKit+QIMEncryptChat.m in Sources */,
 				2C1D0F26215E4F5E00275225 /* QIMManager+XmppImManagerEvent.m in Sources */,
+				336F121324C2B47C00F746C7 /* ExtendableMessage.m in Sources */,
 				2C5AA0FD22E8301700201F2A /* IMDataManager+QIMDBClientConfig.m in Sources */,
+				336F121D24C2B47C00F746C7 /* Field.m in Sources */,
 				2CB8DA9C21494C1800B57B8D /* QIMKit+QIMMessageManager.m in Sources */,
+				336F120424C2B47C00F746C7 /* UnknownFieldSet.m in Sources */,
 				2C1D0F17215E4F5E00275225 /* QIMManager+Message.m in Sources */,
 				2C8DF1E221D50DE0001A3B0E /* QIMContactDatasourceManager.m in Sources */,
 				2CB8DA9621494C1800B57B8D /* QIMKit+QIMSystemMessage.m in Sources */,
 				2C1D0F47215E502C00275225 /* QIMAppInfo.m in Sources */,
+				336F11F924C2B47C00F746C7 /* CodedInputStream.m in Sources */,
+				336F11FF24C2B47C00F746C7 /* ConcreteExtensionField.m in Sources */,
 				2CB8DA9521494C1800B57B8D /* QIMKit+QIMAppSetting.m in Sources */,
 				2C5AA0F522E8301700201F2A /* IMDataManager+QIMSearchKeyHistory.m in Sources */,
+				336F122024C2B47C00F746C7 /* WireFormat.m in Sources */,
 				2C5AA0F922E8301700201F2A /* IMDataManager.m in Sources */,
 				2CB8DA7D21494C1800B57B8D /* QIMKit+QIMQuickReply.m in Sources */,
 				2C1D0F2D215E4F5E00275225 /* QIMManager+Login.m in Sources */,
 				2C5AA0E422E8301700201F2A /* IMDataManager+QIMDBFriend.m in Sources */,
 				2CB8DA6221494C1800B57B8D /* QIMKit+QIMShareExtension.m in Sources */,
 				2CB8DA9F21494C1800B57B8D /* QIMKit+QIMUserCacheManager.m in Sources */,
+				336F121924C2B47C00F746C7 /* CodedOutputStream.m in Sources */,
 				2CB8DA8921494C1800B57B8D /* QIMKit+QIMSingleMessage.m in Sources */,
 				2C5AA0F022E8301700201F2A /* IMDataManager+QIMSession.m in Sources */,
+				336F120024C2B47C00F746C7 /* ExtendableMessageBuilder.m in Sources */,
 				2C5AA0F222E8301700201F2A /* IMDataManager+QIMNote.m in Sources */,
 				2C099BAF21BF8BB700F7692A /* QIMKit+QIMUserMedal.m in Sources */,
 				2CB8DA6821494C1800B57B8D /* QIMKit+QIMDB.m in Sources */,
@@ -1297,7 +1535,9 @@
 				2C5AA0EC22E8301700201F2A /* IMDataManager+QIMDBPublicNumber.m in Sources */,
 				2C5AA0F722E8301700201F2A /* IMDataManager+QIMDBUser.m in Sources */,
 				2C8DF1DF21D50DE0001A3B0E /* QIMVoiceNoReadStateManager.m in Sources */,
+				336F120624C2B47C00F746C7 /* MutableExtensionRegistry.m in Sources */,
 				2C1D0F64215E504A00275225 /* QIMFilteredProtocol.m in Sources */,
+				336F121024C2B47C00F746C7 /* PBArray.m in Sources */,
 				2C1D0F3A215E4F5E00275225 /* QIMManager+NetWork.m in Sources */,
 				2CB8DAFD21494C2000B57B8D /* QIMNetworkObserver.m in Sources */,
 				2C1D0F24215E4F5E00275225 /* QIMManager+QuickReply.m in Sources */,

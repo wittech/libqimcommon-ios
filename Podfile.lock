@@ -32,7 +32,6 @@ PODS:
   - CocoaLumberjack (3.6.1):
     - CocoaLumberjack/Core (= 3.6.1)
   - CocoaLumberjack/Core (3.6.1)
-  - ProtocolBuffers (1.9.11)
   - "QIMCommonCategories (4.0.55+1)"
   - "QIMDataBase (4.0.55+1)"
   - "QIMKitVendor (4.0.53+3)":
@@ -147,7 +146,6 @@ DEPENDENCIES:
   - AvoidCrash
   - CocoaAsyncSocket
   - CocoaLumberjack
-  - ProtocolBuffers
   - QIMCommonCategories (~> 4.0)
   - QIMDataBase (~> 4.0)
   - QIMKitVendor (~> 4.0)
@@ -168,7 +166,6 @@ SPEC REPOS:
     - AvoidCrash
     - CocoaAsyncSocket
     - CocoaLumberjack
-    - ProtocolBuffers
     - Reachability
     - SQLiteRepairKit
     - UICKeyChainStore
@@ -190,7 +187,6 @@ SPEC CHECKSUMS:
   AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
-  ProtocolBuffers: d509225eb2ea43d9582a59e94348fcf86e2abd65
   QIMCommonCategories: c9fd846c0e09ecb6ba61202fed688712ad877de0
   QIMDataBase: 61dc346b940600f3c4784058153d632b910cfbb9
   QIMKitVendor: 92398ce7913a35170522fa22c6712cd2f492ef19
@@ -206,6 +202,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
 
-PODFILE CHECKSUM: 72f4c3380b8b979fae2f25b1675cb6e16bd3a646
+PODFILE CHECKSUM: 9d5ce256bb5b3bb99e11d4889bb65c6461d94dbc
 
 COCOAPODS: 1.9.3

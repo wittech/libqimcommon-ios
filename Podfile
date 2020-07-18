@@ -23,7 +23,6 @@ target 'QIMCommon' do
     pod 'YYCache'
     pod 'YYModel'
  
-    pod 'ProtocolBuffers'
     pod 'CocoaLumberjack'
     pod 'UICKeyChainStore'
     pod 'CocoaAsyncSocket'
