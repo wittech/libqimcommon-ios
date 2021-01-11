@@ -37,3 +37,4 @@ Thumbs.db
 Pods/
 QIMCommon.xcodeproj/xcuserdata/
 QIMCommon.xcworkspace/xcuserdata/
+Podfile.lock
