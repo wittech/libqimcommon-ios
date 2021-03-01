@@ -116,7 +116,7 @@ char* rsaEncryptThenBase64( RSA *pubKey, unsigned char* binaryData, int binaryDa
     
     // To base 64
     int asciiBase64EncLen ;
-    char* asciiBase64Enc = base64( encrypted, encryptedDataLen, &asciiBase64EncLen ) ;
+    char* asciiBase64Enc = base64_( encrypted, encryptedDataLen, &asciiBase64EncLen ) ;
     
     // Destroy the encrypted data (we are using the base64 version of it)
     free( encrypted ) ;
@@ -128,7 +128,7 @@ char* rsaEncryptThenBase64( RSA *pubKey, unsigned char* binaryData, int binaryDa
 unsigned char* rsaDecryptThisBase64( RSA *privKey, char* base64String, int *outLen )
 {
     int encBinLen ;
-    unsigned char* encBin = unbase64( base64String, (int)strlen( base64String ), &encBinLen ) ;
+    unsigned char* encBin = unbase64_( base64String, (int)strlen( base64String ), &encBinLen ) ;
     
     // rsaDecrypt assumes length of encBin based on privKey
     unsigned char *decryptedBin = rsaDecrypt( privKey, encBin, outLen ) ;
