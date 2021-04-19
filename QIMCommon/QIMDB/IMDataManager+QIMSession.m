@@ -403,6 +403,57 @@
     return result;
 }
 
+- (NSArray *)qimDB_getSessionListWithUserIdAndChatType:(NSString *)userId singleChatType:(int)singleChatType {
+    __block NSMutableArray *result = nil;
+    [[self dbInstance] inDatabase:^(QIMDataBase* _Nonnull database) {
+        NSString *sql = [NSString stringWithFormat:@"select a.XmppId, a.UserId, case a.ChatType WHEN %d THEN (select name from IM_Users where IM_Users.XmppId = a.XmppId) ELSE (select name from IM_Group where IM_Group.GroupId = a.XmppId) end as Name, case a.ChatType When %d THEN (Select HeaderSrc From IM_Users WHERE UserId = a.UserId) ELSE (SELECT HeaderSrc From IM_Group WHERE GroupId=a.XmppId) END as HeaderSrc, b.MsgId, b.Content, b.Type, b.State, b.Direction, a.ChatType, a.RealJid, a.LastUpdateTime, (case when (select count(*) from IM_Client_Config where DeleteFlag =0 and ConfigKey ='kStickJidDic' and ConfigSubKey=(a.XmppId ||'<>'||a.RealJid))=1 Then 1 ELSE 0 END) as StickState, (case when (select count(*) from IM_Client_Config where ConfigKey='kNoticeStickJidDic'and DeleteFlag=0 and ConfigSubKey=a.XmppId)=1 Then 1 ELSE 0 END) as Reminded, (case when (select count(*) from IM_Client_Config where ConfigKey='kMarkupNames' and DeleteFlag=0 and ConfigSubKey=a.XmppId)=1 Then (select ConfigValue from IM_Client_Config where ConfigKey='kMarkupNames' and DeleteFlag=0 and ConfigSubKey=a.XmppId) ELSE NULL END) as MarkupName, b.'From', a.UnreadCount from IM_SessionList as a left join IM_Message as b on a.LastMessageId = b.MsgId where a.XmppId='%@' order by StickState desc, a.LastUpdateTime desc;", singleChatType, singleChatType, userId];
+        DataReader *reader = [database executeReader:sql withParameters:nil];
+        
+        result = [[NSMutableArray alloc] initWithCapacity:1];
+        while ([reader read]) {
+            
+            NSString *xmppId = [reader objectForColumnIndex:0];
+            NSString *userId = [reader objectForColumnIndex:1];
+            NSString *name = [reader objectForColumnIndex:2];
+            NSString *headerSrc = [reader objectForColumnIndex:3];
+            NSString *lastMsgId = [reader objectForColumnIndex:4];
+            NSString *content = [reader objectForColumnIndex:5];
+            NSNumber *msgType = [reader objectForColumnIndex:6];
+            NSNumber *msgState = [reader objectForColumnIndex:7];
+            NSNumber *msgDirection = [reader objectForColumnIndex:8];
+            NSNumber *chatType = [reader objectForColumnIndex:9];
+            NSString *realJid = [reader objectForColumnIndex:10];
+            NSNumber *msgDateTime = [reader objectForColumnIndex:11];
+            NSNumber *stickState = [reader objectForColumnIndex:12];
+            NSNumber *reminded = [reader objectForColumnIndex:13];
+            NSString *markUpName = [reader objectForColumnIndex:14];
+            NSString *msgFrom = [reader objectForColumnIndex:15];
+            NSNumber *unreadCount = [reader objectForColumnIndex:16];
+
+                NSMutableDictionary *sessionDic = [[NSMutableDictionary alloc] init];
+                [IMDataManager safeSaveForDic:sessionDic setObject:xmppId forKey:@"XmppId"];
+                [IMDataManager safeSaveForDic:sessionDic setObject:userId forKey:@"UserId"];
+                [IMDataManager safeSaveForDic:sessionDic setObject:name forKey:@"Name"];
+                [IMDataManager safeSaveForDic:sessionDic setObject:headerSrc forKey:@"HeaderSrc"];
+                [IMDataManager safeSaveForDic:sessionDic setObject:lastMsgId forKey:@"LastMsgId"];
+                [IMDataManager safeSaveForDic:sessionDic setObject:content forKey:@"Content"];
+                [IMDataManager safeSaveForDic:sessionDic setObject:msgType forKey:@"MsgType"];
+                [IMDataManager safeSaveForDic:sessionDic setObject:msgState forKey:@"MsgState"];
+                [IMDataManager safeSaveForDic:sessionDic setObject:msgDirection forKey:@"MsgDirection"];
+                [IMDataManager safeSaveForDic:sessionDic setObject:chatType forKey:@"ChatType"];
+                [IMDataManager safeSaveForDic:sessionDic setObject:realJid forKey:@"RealJid"];
+                [IMDataManager safeSaveForDic:sessionDic setObject:msgDateTime forKey:@"MsgDateTime"];
+                [IMDataManager safeSaveForDic:sessionDic setObject:stickState forKey:@"StickState"];
+                [IMDataManager safeSaveForDic:sessionDic setObject:reminded forKey:@"Reminded"];
+                [IMDataManager safeSaveForDic:sessionDic setObject:markUpName forKey:@"MarkUpName"];
+                [IMDataManager safeSaveForDic:sessionDic setObject:msgFrom forKey:@"MsgFrom"];
+                [IMDataManager safeSaveForDic:sessionDic setObject:unreadCount forKey:@"UnreadCount"];
+                [result addObject:sessionDic];
+        }
+    }];
+    return result;
+}
+
 - (NSArray *)qimDB_getSessionListXMPPIDWithSingleChatType:(int)singleChatType {
     
     __block NSMutableArray *result = nil;

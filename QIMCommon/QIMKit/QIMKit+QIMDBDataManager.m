@@ -478,6 +478,10 @@
     return [[IMDataManager qimDB_SharedInstance] qimDB_getSessionListWithSingleChatType:chatType];
 }
 
+- (NSArray *)qimDB_getSessionListWithUserIdAndChatType:(NSString *)userId singleChatType:(int)singleChatType {
+    return [[IMDataManager qimDB_SharedInstance] qimDB_getSessionListWithUserIdAndChatType:userId singleChatType:singleChatType];
+}
+
 - (NSArray *)getSessionListXMPPIDWithSingleChatType:(int)singleChatType {
     return [[IMDataManager qimDB_SharedInstance] qimDB_getSessionListXMPPIDWithSingleChatType:singleChatType];
 }
