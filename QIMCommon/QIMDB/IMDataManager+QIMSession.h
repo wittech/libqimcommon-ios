@@ -51,6 +51,8 @@
 
 - (NSArray *)qimDB_getSessionListWithSingleChatType:(int)singleChatType;
 
+- (NSArray *)qimDB_getSessionListWithUserIdAndChatType:(NSString *)userId singleChatType:(int)singleChatType;
+
 - (NSArray *)qimDB_getSessionListXMPPIDWithSingleChatType:(int)singleChatType;
 
 - (NSDictionary *)qimDB_getChatSessionWithUserId:(NSString *)userId chatType:(int)chatType;

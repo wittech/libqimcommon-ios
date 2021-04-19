@@ -15,8 +15,12 @@
 }
 
 - (NSArray *)getSessionList {
-    
     NSArray *sessionList = [[IMDataManager qimDB_SharedInstance] qimDB_getSessionListWithSingleChatType:ChatType_SingleChat];
+    return sessionList;
+}
+
+- (NSArray *)getSession:(NSString *)userId {
+    NSArray *sessionList = [[IMDataManager qimDB_SharedInstance] qimDB_getSessionListWithUserIdAndChatType:userId singleChatType:ChatType_SingleChat];
     return sessionList;
 }
 

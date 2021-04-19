@@ -556,68 +556,70 @@ static QIMManager *__IMManager = nil;
     [self updateFriendInviteList];
     QIMVerboseLog(@"邀请好友申请loginComplate耗时 : %llf", [[QIMWatchDog sharedInstance] escapedTimewithStartTime:startTime15]);
     
-    if ([[QIMAppInfo sharedInstance] appType] == QIMProjectTypeQChat) {
-        QIMVerboseLog(@"客服获取快捷回复");
-        [self getRemoteQuickReply];
-    };
-    
-    if ([[QIMNavConfigManager sharedInstance] showOA] == YES) {
-        QIMVerboseLog(@"开始获取行程区域");
-        [self getRemoteAreaList];
-        QIMVerboseLog(@"结束获取行程区域");
-        
-        QIMVerboseLog(@"开始获取用户行程列表");
-        [self getRemoteUserTripList];
-        QIMVerboseLog(@"结束获取用户行程列表");
-    }
-    [self updateMyCard];
+    //todo:移除驼圈无意义代码
 
-    if ([[QIMAppInfo sharedInstance] appType] == QIMProjectTypeQChat) {
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-            if ([self isMerchant]) {
-                //客服发送上线通知
-                QIMVerboseLog(@"客服发送上线通知");
-                [self sendQChatOnlineNotification];
-            }
-        });
-    }
+    // if ([[QIMAppInfo sharedInstance] appType] == QIMProjectTypeQChat) {
+    //     QIMVerboseLog(@"客服获取快捷回复");
+    //     [self getRemoteQuickReply];
+    // };
     
-    if ([[QIMAppInfo sharedInstance] appType] != QIMProjectTypeQChat) {
+    // if ([[QIMNavConfigManager sharedInstance] showOA] == YES) {
+    //     QIMVerboseLog(@"开始获取行程区域");
+    //     [self getRemoteAreaList];
+    //     QIMVerboseLog(@"结束获取行程区域");
         
-        QIMVerboseLog(@"登录之后请求一下驼圈入口开关");
-        [self getCricleCamelEntrance];
-        QIMVerboseLog(@"登录之后请求一下驼圈视频配置");
-        [self getCricleCamelVideoConfig];
+    //     QIMVerboseLog(@"开始获取用户行程列表");
+    //     [self getRemoteUserTripList];
+    //     QIMVerboseLog(@"结束获取用户行程列表");
+    // }
+    // [self updateMyCard];
+
+    // if ([[QIMAppInfo sharedInstance] appType] == QIMProjectTypeQChat) {
+    //     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+    //         if ([self isMerchant]) {
+    //             //客服发送上线通知
+    //             QIMVerboseLog(@"客服发送上线通知");
+    //             [self sendQChatOnlineNotification];
+    //         }
+    //     });
+    // }
+
+//     if ([[QIMAppInfo sharedInstance] appType] != QIMProjectTypeQChat) {
         
-        QIMVerboseLog(@"登录之后获取一下驼圈提醒开关");
-        [self getRemoteWorkMomentSwitch];
+//         QIMVerboseLog(@"登录之后请求一下驼圈入口开关");
+//         [self getCricleCamelEntrance];
+//         QIMVerboseLog(@"登录之后请求一下驼圈视频配置");
+//         [self getCricleCamelVideoConfig];
         
-        QIMVerboseLog(@"登录之后请求一下驼圈未读消息");
-        [self getupdateRemoteWorkNoticeMsgs];
+//         QIMVerboseLog(@"登录之后获取一下驼圈提醒开关");
+//         [self getRemoteWorkMomentSwitch];
+        
+//         QIMVerboseLog(@"登录之后请求一下驼圈未读消息");
+//         [self getupdateRemoteWorkNoticeMsgs];
         
     
-        QIMVerboseLog(@"登录之后请求热线账户列表");
-        [self getRemoteHotlineShopList];
+//         QIMVerboseLog(@"登录之后请求热线账户列表");
+//         [self getRemoteHotlineShopList];
         
-        QIMVerboseLog(@"登录之后获取发现页应用列表");
-        [self getRemoteFoundNavigation];
+//         QIMVerboseLog(@"登录之后获取发现页应用列表");
+//         [self getRemoteFoundNavigation];
         
-        QIMVerboseLog(@"登录之后获取勋章列表");
-        [self getRemoteMedalList];
+//         QIMVerboseLog(@"登录之后获取勋章列表");
+//         [self getRemoteMedalList];
         
-        QIMVerboseLog(@"登录之后获取我的勋章列表");
-        [self getRemoteUserMedalListWithUserId:[[QIMManager sharedInstance] getLastJid]];
-    }
-    if ([[QIMAppInfo sharedInstance] appType] == QIMProjectTypeQTalk) {
-        QIMVerboseLog(@"登录之后请求一下骆驼帮未读数");
+//         QIMVerboseLog(@"登录之后获取我的勋章列表");
+//         [self getRemoteUserMedalListWithUserId:[[QIMManager sharedInstance] getLastJid]];
+//     }
+//     if ([[QIMAppInfo sharedInstance] appType] == QIMProjectTypeQTalk) {
+//         QIMVerboseLog(@"登录之后请求一下骆驼帮未读数");
         
-        [[QIMManager sharedInstance] getExploreNotReaderCount];
-    }
+//         [[QIMManager sharedInstance] getExploreNotReaderCount];
+//     }
     
-    if ([[QIMAppInfo sharedInstance] appType] == QIMProjectTypeStartalk && [[QIMAppInfo sharedInstance] applicationState] == QIMApplicationStateLaunch) {
-        QIMVerboseLog(@"请求新版本");
-//        [self findNewestClient];
-    }
+//     if ([[QIMAppInfo sharedInstance] appType] == QIMProjectTypeStartalk && [[QIMAppInfo sharedInstance] applicationState] == QIMApplicationStateLaunch) {
+//         QIMVerboseLog(@"请求新版本");
+// //        [self findNewestClient];
+//     }
 
     QIMVerboseLog(@"登录之后主动上报日志");
     Class autoTracker = NSClassFromString(@"QIMAutoTrackerOperation");

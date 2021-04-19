@@ -259,6 +259,7 @@
 - (NSDictionary *)qimDb_getPublicNumberSession;
 // 获取会话列表
 - (NSArray *)qimDB_getSessionListWithSingleChatType:(int)chatType;
+- (NSArray *)qimDB_getSessionListWithUserIdAndChatType:(NSString *)userId singleChatType:(int)singleChatType;
 - (NSArray *)getSessionListXMPPIDWithSingleChatType:(int)singleChatType;
 - (NSArray *)qimDB_getNotReadMsgListForUserId:(NSString *)userId;
 - (NSArray *)qimDB_getNotReadMsgListForUserId:(NSString *)userId ForRealJid:(NSString *)realJid;

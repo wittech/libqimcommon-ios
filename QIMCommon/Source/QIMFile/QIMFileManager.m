@@ -7,7 +7,9 @@
 
 #import "QIMFileManager.h"
 #import "QIMStringTransformTools.h"
-#import <QIMGeneralModule/QIMEncryptChat.h>
+#if __has_include("QIMNoteManager.h")
+    #import <QIMGeneralModule/QIMEncryptChat.h>
+#endif
 //#import "QIMKit+QIMEncryptChat.h"
 #import <SDWebImage/SDImageCache.h>
 

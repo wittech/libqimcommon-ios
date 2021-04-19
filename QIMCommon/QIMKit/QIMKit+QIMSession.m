@@ -23,8 +23,11 @@
 }
 
 - (NSArray *)getSessionList {
-    
     return [[QIMManager sharedInstance] getSessionList];
+}
+
+- (NSArray *)getSession:(NSString *)userId {
+    return [[QIMManager sharedInstance] getSession:userId];
 }
 
 - (NSArray *)getNotReadSessionList {

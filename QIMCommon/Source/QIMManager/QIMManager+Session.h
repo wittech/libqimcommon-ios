@@ -21,6 +21,8 @@
  */
 - (NSArray *)getSessionList;
 
+- (NSArray *)getSession:(NSString *)userId;
+
 /**
  获取最近有未读消息的会话列表
  */
