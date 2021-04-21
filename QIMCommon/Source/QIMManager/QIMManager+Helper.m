@@ -26,9 +26,8 @@ static SystemSoundID _ringSystemSoundID;
             // 非租车业务才播放声音
             SystemSoundID soundID;
             // 读文件获取SoundID
-            NSString *filePath = [NSBundle qim_myLibraryResourcePathWithClassName:@"QIMCommonResource" BundleName:@"QIMCommonResource" pathForResource:@"hongbao" ofType:@"aac"];
+            NSString *filePath = [NSBundle qim_myLibraryResourcePathWithClassName:@"QIMCommonResource" BundleName:@"QIMCommonResource" pathForResource:@"hongbao" ofType:@"mp3"];
             if (filePath != nil) {
-                
                 //声音
                 AudioServicesCreateSystemSoundID((__bridge CFURLRef) [NSURL fileURLWithPath:filePath], &soundID);
                 AudioServicesPlaySystemSound(soundID);
@@ -74,7 +73,7 @@ static void ringAudioServicesSystemSoundCompletionProc(SystemSoundID ssID, void 
                     SystemSoundID soundID;
                     // 读文件获取SoundID
 
-                    NSString *filePath = [NSBundle qim_myLibraryResourcePathWithClassName:@"QIMCommonResource" BundleName:@"QIMCommonResource" pathForResource:@"msg" ofType:@"wav"];
+                    NSString *filePath = [NSBundle qim_myLibraryResourcePathWithClassName:@"QIMCommonResource" BundleName:@"QIMCommonResource" pathForResource:@"general" ofType:@"mp3"];
                     if (filePath != nil) {
                         //声音
                         [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategorySoloAmbient

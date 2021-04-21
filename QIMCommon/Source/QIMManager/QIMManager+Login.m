@@ -50,9 +50,9 @@
     [[QIMUserCacheManager sharedInstance] setUserObject:[userName lowercaseString] forKey:kLastUserId];
     [[QIMUserCacheManager sharedInstance] setUserObject:pwd forKey:kTempPassword];
     QIMVerboseLog(@"登陆之前当前CacheName : %@", [[QIMUserCacheManager sharedInstance] cacheName]);
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationSessionListUpdate object:@"ForceRefresh"];
-    });
+    // dispatch_async(dispatch_get_main_queue(), ^{
+    //     [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationSessionListUpdate object:@"ForceRefresh"];
+    // });
     
     //初始化用户数据
     [self initUserDicts];

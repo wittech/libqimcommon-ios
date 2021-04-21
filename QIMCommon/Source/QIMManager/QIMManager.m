@@ -454,9 +454,9 @@ static QIMManager *__IMManager = nil;
     QIMVerboseLog(@"获取群历史记录结束2");
 
     dispatch_async(dispatch_get_main_queue(), ^{
-        QIMVerboseLog(@"强制刷新列表页");
-        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationSessionListUpdate object:@"ForceRefresh"];
-        QIMVerboseLog(@"强制刷新列表页结束");
+        // QIMVerboseLog(@"强制刷新列表页"); 下面有强制刷新了，这里可以取消
+        // [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationSessionListUpdate object:@"ForceRefresh"];
+        // QIMVerboseLog(@"强制刷新列表页结束");
         
         QIMVerboseLog(@"强制刷一下群聊会话框界面的消息开始2");
         [[NSNotificationCenter defaultCenter] postNotificationName:kGroupChatMsgReloadNotification object:nil];
@@ -490,19 +490,19 @@ static QIMManager *__IMManager = nil;
     QIMVerboseLog(@"同步服务端漫游的个人配置2loginComplate耗时 : %llf", [[QIMWatchDog sharedInstance] escapedTimewithStartTime:startTime6]);
     QIMVerboseLog(@"同步服务端漫游的个人配置完成2");
     
-    if ([[QIMAppInfo sharedInstance] appType] != QIMProjectTypeQChat) {
-        QIMVerboseLog(@"开始获取我的关联账户2");
-        CFAbsoluteTime startTime7 = [[QIMWatchDog sharedInstance] startTime];
-        [self getRemoteCollectionAccountList];
-        QIMVerboseLog(@"获取我的关联账户2loginComplate耗时 : %llf", [[QIMWatchDog sharedInstance] escapedTimewithStartTime:startTime7]);
-        /* 暂时屏蔽公众号
-        QIMVerboseLog(@"开始同步公众号列表2");
-        CFAbsoluteTime startTime8 = [[QIMWatchDog sharedInstance] startTime];
-        [self updatePublicNumberList];
-        QIMVerboseLog(@"同步公众号列表2loginComplate耗时 : %llf", [[QIMWatchDog sharedInstance] escapedTimewithStartTime:startTime8]);
-        QIMVerboseLog(@"同步公众号列表完成2");
-         */
-    }
+    // if ([[QIMAppInfo sharedInstance] appType] != QIMProjectTypeQChat) {
+    //     QIMVerboseLog(@"开始获取我的关联账户2");
+    //     CFAbsoluteTime startTime7 = [[QIMWatchDog sharedInstance] startTime];
+    //     [self getRemoteCollectionAccountList];
+    //     QIMVerboseLog(@"获取我的关联账户2loginComplate耗时 : %llf", [[QIMWatchDog sharedInstance] escapedTimewithStartTime:startTime7]);
+    //     /* 暂时屏蔽公众号
+    //     QIMVerboseLog(@"开始同步公众号列表2");
+    //     CFAbsoluteTime startTime8 = [[QIMWatchDog sharedInstance] startTime];
+    //     [self updatePublicNumberList];
+    //     QIMVerboseLog(@"同步公众号列表2loginComplate耗时 : %llf", [[QIMWatchDog sharedInstance] escapedTimewithStartTime:startTime8]);
+    //     QIMVerboseLog(@"同步公众号列表完成2");
+    //      */
+    // }
     
     QIMVerboseLog(@"开始Check组织架构2");
     CFAbsoluteTime startTime9 = [[QIMWatchDog sharedInstance] startTime];
