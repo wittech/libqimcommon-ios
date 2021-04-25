@@ -755,7 +755,7 @@
                     }
                     [self qimNav_updateNavigationConfigWithHashHost:_hashHosts];
                 }
-                [self qimNav_updateAdvertConfigWithCheck:YES];
+                //[self qimNav_updateAdvertConfigWithCheck:YES];
                 [self qimNav_getRSACodePublicKeyFromRemote];
             }
             [[QIMUserCacheManager sharedInstance] setUserObject:@(currentTime) forKey:@"NavConfigUpdateTime"];
