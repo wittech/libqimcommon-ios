@@ -8,6 +8,8 @@
 #ifndef QIMNotificationKeys_h
 #define QIMNotificationKeys_h
 
+#define kNotificationBackButtonClick     @"kNotificationBackButtonClick" //从单聊或群聊界面点击返回后触发的事件，会将消息模型带回列表也进行更新；
+
 #define kNotificationLoginState             @"kNotificationLoginState"
 
 #define kNotificationLogout                 @"kNotificationLogout"          //退出登录通知
