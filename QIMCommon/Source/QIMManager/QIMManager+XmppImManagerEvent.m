@@ -513,10 +513,17 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationMessageUpdate object:sid userInfo:@{@"message": mesg}];
             if (![sid isEqualToString:self.currentSessionUserId] && mesg.messageDirection == QIMMessageDirection_Received) {
-                if (mesg.messageType == QIMMessageType_RedPack) {
-                    [self playHongBaoSound];
-                } else {
-                    [self playSound];
+                //增加消息提醒的逻辑处理；
+                BOOL isRemind = [self groupPushState:sid];
+                if (isRemind) {
+                    if (mesg.messageType == QIMMessageType_RedPack) {
+                        [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playHongBaoSound) object:nil];
+                        [self performSelector:@selector(playHongBaoSound) withObject:nil afterDelay:0.1];
+                    } else {
+                        //延迟0.1秒执行
+                        [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playSound) object:nil];
+                        [self performSelector:@selector(playSound) withObject:nil afterDelay:0.1];
+                    }
                 }
             }
         });
