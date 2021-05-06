@@ -9,6 +9,8 @@
 #define QIMNotificationKeys_h
 
 #define kNotificationBackButtonClick     @"kNotificationBackButtonClick" //从单聊或群聊界面点击返回后触发的事件，会将消息模型带回列表也进行更新；
+#define kNotificationOpenUserInfo     @"kNotificationOpenUserInfo" //打开用户信息卡片页，点击头像打开的个人页面，跳转flutter；
+#define kNotificationOpenGroupInfo     @"kNotificationOpenGroupInfo" //打开用户信息卡片页，点击头像打开的个人页面，跳转flutter；
 
 #define kNotificationLoginState             @"kNotificationLoginState"
 

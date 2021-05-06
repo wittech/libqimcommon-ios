@@ -466,16 +466,16 @@ static QIMManager *__IMManager = nil;
     QIMVerboseLog(@"主页Title已经更新为登录完成");
     
     QIMVerboseLog(@"开始获取群阅读指针2");
-    CFAbsoluteTime startTime4 = [[QIMWatchDog sharedInstance] startTime];
+//    CFAbsoluteTime startTime4 = [[QIMWatchDog sharedInstance] startTime];
     [self updateMucReadMark];
-    QIMVerboseLog(@"获取群阅读指针2loginComplate耗时 : %llf", [[QIMWatchDog sharedInstance] escapedTimewithStartTime:startTime4]);
+//    QIMVerboseLog(@"获取群阅读指针2loginComplate耗时 : %llf", [[QIMWatchDog sharedInstance] escapedTimewithStartTime:startTime4]);
     QIMVerboseLog(@"获取群阅读指针结束2");
-    dispatch_async(dispatch_get_main_queue(), ^{
-        QIMVerboseLog(@"获取阅读指针之后再次强制刷新列表页");
-        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationSessionListUpdate object:@"ForceRefresh"];
-        QIMVerboseLog(@"获取阅读指针之后再次强制刷新列表页结束");
-    });
-    QIMVerboseLog(@"同步消息完成耗时 : %lf", [[QIMWatchDog sharedInstance] escapedTimewithStartTime:startTime1]);
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        QIMVerboseLog(@"获取阅读指针之后再次强制刷新列表页");
+//        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationSessionListUpdate object:@"ForceRefresh"];
+//        QIMVerboseLog(@"获取阅读指针之后再次强制刷新列表页结束");
+//    });
+//    QIMVerboseLog(@"同步消息完成耗时 : %lf", [[QIMWatchDog sharedInstance] escapedTimewithStartTime:startTime1]);
 
     QIMVerboseLog(@"开始获取系统历史记录2");
     CFAbsoluteTime startTime5 = [[QIMWatchDog sharedInstance] startTime];
@@ -1622,7 +1622,7 @@ http://url/push/qtapi/token/setmsgsettings.qunar?username=hubo.hu&domain=ejabhos
 
 - (void)sendServer:(NSString *)notificationToken withUsername:(NSString *)username withParamU:(NSString *)paramU withParamK:(NSString *)paramK WithDelete:(BOOL)deleteFlag withCallback:(QIMKitRegisterPushTokenSuccessBlock)callback {
     
-    QIMVerboseLog(@"准备向帆哥服务器发送Push Token . Token : %@, 用户名 : %@, U = %@, K = %@", notificationToken, username, paramU, paramK);
+    QIMVerboseLog(@"准备向服务器发送Push Token . Token : %@, 用户名 : %@, U = %@, K = %@", notificationToken, username, paramU, paramK);
     if (paramK.length <= 0 || !paramK) {
         paramK = [self updateRemoteLoginKey];
     }

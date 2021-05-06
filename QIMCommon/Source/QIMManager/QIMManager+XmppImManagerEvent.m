@@ -514,8 +514,8 @@
             [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationMessageUpdate object:sid userInfo:@{@"message": mesg}];
             if (![sid isEqualToString:self.currentSessionUserId] && mesg.messageDirection == QIMMessageDirection_Received) {
                 //增加消息提醒的逻辑处理；
-                BOOL isRemind = [self groupPushState:sid];
-                if (isRemind) {
+                NSInteger remind = [[QIMManager sharedInstance] getClientConfigDeleteFlagWithType:QIMClientConfigTypeKNoticeStickJidDic WithSubKey:sid];
+                if (remind != 0) {
                     if (mesg.messageType == QIMMessageType_RedPack) {
                         [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playHongBaoSound) object:nil];
                         [self performSelector:@selector(playHongBaoSound) withObject:nil afterDelay:0.1];
@@ -597,7 +597,7 @@
         
         dispatch_async(dispatch_get_main_queue(), ^{
             [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationMessageUpdate object:sid userInfo:@{@"message": mesg}];
-            BOOL isRemind = [self groupPushState:sid];
+//            BOOL isRemind = [self groupPushState:sid];
             if (mesg.messageDirection == QIMMessageDirection_Received && (![self.currentSessionUserId isEqualToString:sid])) {
                 if (mesg.messageType == QIMMessageType_NewAt) {
                     //新版艾特消息
@@ -640,7 +640,8 @@
                     }
                 }
                 if (![sid isEqualToString:self.currentSessionUserId]) {
-                    if (isRemind) {
+                    NSInteger remind = [[QIMManager sharedInstance] getClientConfigDeleteFlagWithType:QIMClientConfigTypeKNoticeStickJidDic WithSubKey:sid];
+                    if (remind != 0) {
                         if (mesg.messageType == QIMMessageType_RedPack) {
                             [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playHongBaoSound) object:nil];
                             [self performSelector:@selector(playHongBaoSound) withObject:nil afterDelay:0.1];

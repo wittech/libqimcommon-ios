@@ -165,11 +165,11 @@
             lastMsgTime = [[NSDate date] qim_timeIntervalSince1970InMilliSecond] - 2 * 24 * 60 * 60 * 1000;
         }
         [[IMDataManager qimDB_SharedInstance] qimDB_insertSessionWithSessionId:jid WithUserId:[[jid componentsSeparatedByString:@"@"] objectAtIndex:0] WithLastMsgId:msgId WithLastUpdateTime:lastMsgTime ChatType:type WithRealJid:jid];
-        if (needUpdate) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationSessionListUpdate object:nil];
-            });
-        }
+//        if (needUpdate) {
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationSessionListUpdate object:nil];
+//            });
+//        }
     }
 }
 
